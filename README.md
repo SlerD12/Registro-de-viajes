@@ -1,2 +1,2 @@
-# Registro-de-viajes
-Registro de Viajes 
+# Viajes-bit
+Bitacora de viajes 
