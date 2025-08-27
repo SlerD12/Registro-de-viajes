@@ -151,14 +151,14 @@
 
     function resumen(){
       const lista=(claveActual?archivados[claveActual]:viajes).filter(ok);
-      const r={total:lista.length,productos:{Premium:0,Magna:0,Diesel:0},destinos:{"Velam":0,"San Juan de los Llanos":0,"Noyowee":0,"Estación 0324":0,"Bajos del Ejido":0,"San Luis Acatlán":0}};
+      const r={total:lista.length,productos:{Premium:0,Magna:0,Diesel:0},destinos:{"Velam":0,"San Juan":0,"Noyowee":0,"Estación 0324":0,"Bajos del Ejido":0,"San Luis Acatlán":0}};
       lista.forEach(v=>{r.productos[v.producto]++;r.destinos[v.destino]++});
       document.getElementById("totalViajes").textContent=r.total;
       document.getElementById("totalPremium").textContent=r.productos.Premium;
       document.getElementById("totalMagna").textContent=r.productos.Magna;
       document.getElementById("totalDiesel").textContent=r.productos.Diesel;
       document.getElementById("velam").textContent=r.destinos["Velam"];
-      document.getElementById("sanjuan").textContent=r.destinos["San Juan de los Llanos"];
+      document.getElementById("sanjuan").textContent=r.destinos["San Juan"];
       document.getElementById("noyo").textContent=r.destinos["Noyowee"];
       document.getElementById("e0324").textContent=r.destinos["Estación 0324"];
       document.getElementById("bajos").textContent=r.destinos["Bajos del Ejido"];
